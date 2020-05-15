@@ -2,7 +2,7 @@
     <div id="app">
         <h3>Vuex购物车demo</h3>
         <shop-list></shop-list>
-        <shop-cart></shop-cart>
+        <car-list></car-list>
         <shop-info></shop-info>
     </div>
 </template>
@@ -16,7 +16,7 @@
         components: {
             ShopList:List,
             ShopInfo:Info,
-            ShopCart:Cart
+            CarList:Cart
         }
     }
 </script>
