@@ -5,9 +5,11 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "家人同乐",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "任务清单",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle":"black",
+    "pageOrientation": "landscape",
+    "enablePullDownRefresh": false
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

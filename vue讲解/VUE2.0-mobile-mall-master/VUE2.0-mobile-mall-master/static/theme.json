@@ -1,0 +1,33 @@
+{
+	"data":[
+	{
+	   "classId": 1,
+	   "classTitle": "营养保健",
+	   "imgUrl": "http://localhost:8080/static/images/one.png"
+	},
+	{
+	   "classId": 1,
+	   "classTitle": "营养保健",
+	   "imgUrl": "http://localhost:8080/static/images/one.png"
+	},
+	{
+	   "classId": 1,
+	   "classTitle": "营养保健",
+	   "imgUrl": "http://localhost:8080/static/images/two.png"
+	},
+	{
+	   "classId": 1,
+	   "classTitle": "营养保健",
+	   "imgUrl": "http://localhost:8080/static/images/two.png"
+	},
+	{
+	   "classId": 1,
+	   "classTitle": "营养保健",
+	   "imgUrl": "http://localhost:8080/static/images/one.png"
+	},
+	{
+	   "classId": 1,
+	   "classTitle": "营养保健",
+	   "imgUrl": "http://localhost:8080/static/images/one.png"
+	},
+]}
