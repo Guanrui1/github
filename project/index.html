@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>123</h1>
+</body>
+<script>
+  // 定义函数tranformTree
+  function transformTree(list) {
+    // 定义一个缓存数组tree
+    const tree = []
+    // 开始遍历list数组
+    for (let i = 0, len = list.length; i < len; i++) {
+      // 如果遍历list的当前项不存在pid
+      if (!list[i].pid) {
+        // 将该项和list数组一起传入queryChildren函数，并将结果赋值给item
+        const item = queryChildren(list[i], list)
+        // 将最终得到的item， push到tree数组里
+        tree.push(item)
+      }
+    }
+    // 返回最终结果tree
+    return tree
+  }
+  // 函数queryChildren的声明，接受父节点，和原数组
+  function queryChildren(parent, list) {
+    // 定义children缓存数组
+    const children = []
+
+    // 遍历原数组
+    for (let i = 0, len = list.length; i < len; i++) {
+      // 如果当前项的pid和所传的parent.id相同
+      if (list[i].pid === parent.id) {
+        // 则将当前项调用queryChildren方法处理，并将结果赋值到item
+        const item = queryChildren(list[i], list)
+        // 将item赋值到children里
+        children.push(item)
+      }
+    }
+    // 如果children的长度不为0
+    if (children.length) {
+      // 父节点的children属性就直接绑这个children
+      parent.children = children
+    }
+    // 返回父节点
+    return parent
+  }
+</script>
+
+</html>

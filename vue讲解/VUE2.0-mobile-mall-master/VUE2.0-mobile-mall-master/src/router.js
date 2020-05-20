@@ -76,7 +76,7 @@ const routes = [
 // 创建router实例，设置路由等参数
 const router = new VueRouter({
 	linkActiveClass : 'active', //当前显示的页面的按钮的class
-	routes: routes
+	routes
 })
 
 // 通过路由改变页面title 2017-05-05

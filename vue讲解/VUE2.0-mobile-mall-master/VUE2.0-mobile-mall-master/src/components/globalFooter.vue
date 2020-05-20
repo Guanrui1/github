@@ -1,7 +1,7 @@
 <!-- 页面的底部组件 -->
 <template>
   <ul class="footer-tabs">
-    <li v-for="tab in tabs">
+    <li v-for="(tab, index) in tabs" :key="index">
       <router-link :to="tab.path">
         <!-- 当tab.path 等于 $route.path的时候，要显示黄色的icon -->
         <img class="tab-icon" :src=" tab.path == $route.path ? tab.iconUrlOn : tab.iconUrlOff " />
